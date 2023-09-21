@@ -12,6 +12,7 @@ public class WeStoreController {
 
     @RequestMapping("/")
     public ResponseEntity<String> helloWorld(){
+        System.out.println("gelo");
         return new ResponseEntity<>(HttpStatus.OK);
     }
 }
