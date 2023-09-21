@@ -56,7 +56,7 @@ pipeline {
                 echo "Deploying project"
                 bat '''
                     call javaX "java-17" %1
-                    java -jar C:\\Users\\prave\\.jenkins\\workspace\\mangawebapp-pipeline\\target\\mangaman-webapp-0.0.1-SNAPSHOT.jar
+                    java -jar C:\\Users\\prave\\.jenkins\\workspace\\fileStoragePipeline\\target\\WeStoreFiles-1.0.jar
                 '''
             }
         }
