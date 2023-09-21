@@ -32,7 +32,7 @@ pipeline {
                     echo "always after build"
                 }
                 success {
-                    junit '**/target/surefire-reports/TEST-*.xml'
+//                     junit '**/target/surefire-reports/TEST-*.xml'
                     archiveArtifacts 'target/*.jar'
                 }
                 failure{
@@ -55,7 +55,7 @@ pipeline {
             steps {
                 echo "Deploying project"
                 bat '''
-                    call javaX "java-20" %1
+                    call javaX "java-17" %1
                     java -jar C:\\Users\\prave\\.jenkins\\workspace\\mangawebapp-pipeline\\target\\mangaman-webapp-0.0.1-SNAPSHOT.jar
                 '''
             }
